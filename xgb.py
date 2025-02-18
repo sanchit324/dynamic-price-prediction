@@ -177,3 +177,4 @@ print(pd.Series(xgb_native.feature_importances_, index=all_features).sort_values
 
 print("\nEmbedding Model Feature Importance (First 10 features):")
 print(pd.Series(xgb_emb.feature_importances_, index=[f"f{i}" for i in range(X_train_combined.shape[1])]).head(10).sort_values(ascending=False))
+# %%
